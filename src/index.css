@@ -4,6 +4,15 @@ mid purple: #210456
 light purple: #b915cc
 pink: #f6287d
 green: #8de41c
+
+dermozi-blau: #287ef6
+
+cyberpunk colors:
+#00ff9f	(0,255,159) green
+#00b8ff	(0,184,255) light blue
+#001eff	(0,30,255) blue
+#bd00ff	(189,0,255) purple
+#d600ff	(214,0,255) magenta
 */
 
 :root {
@@ -13,7 +22,7 @@ green: #8de41c
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #0a0324;
+  background-color: black;
   color: #efefef;
 
   font-synthesis: none;
@@ -24,79 +33,65 @@ green: #8de41c
   user-select: none;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
-}
-
 body {
   margin: 0;
   display: flex;
   place-items: center;
-  min-width: 320px;
+  min-width: 20em;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-  a:hover {
-    color: #747bff;
-  }
-  button {
-    background-color: #f9f9f9;
-  }
 }
 
 .SectionWrapper {
   display: flex;
-  flex-direction: row;
-  height: 450px;
+  flex-direction: column;
 }
 
 .SectionContainer {
-  width: 180px;
+  width: 100%;
   height: 100%;
   display: flex;
+  background-color: #f6287d;
+  padding: 1.25em;
+  margin-block: 1.23em;
+  display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
-  background-color: #210456;
-  padding: 20px;
+  box-shadow: 60px -16px #287ef6;
+
+  h2 {
+    font-size: 2em;
+    justify-content: center;
+    align-self: center;
+    text-wrap: nowrap;
+  }
+
+  p {
+    display: none;
+  }
 
   /* &:hover {
-    width: 200px;
+    height: 200px;
   } */
+}
+
+.SectionOne {
+  clip-path: polygon(0% 0%, 100% 0%, 75% 100%, 0% 100%);
+  animation: topSlide 0.1s ease-in forwards;
+}
+/* 
+@keyframes topSlide {
+  from {
+    translate: 150vw 0;
+    scale: 200% 1;
+  }
+
+  to {
+    translate: 0 0;
+    scale: 100% 1;
+  }
+} */
+
+.SectionFour {
+  clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 0% 100%);
 }
 
 /* todo when hove the section container will take 100% and hide the others */

@@ -11,6 +11,7 @@ function App() {
             title="Bio"
             description="A brief introduction about me"
             footer="Updated 2024"
+            className="SectionContainer SectionOne"
           />
         </section>
         <section aria-label="projects">
@@ -18,6 +19,7 @@ function App() {
             title="Projects"
             description="My awesome projects"
             footer="Check them out!"
+            className="SectionContainer"
           />
         </section>
         <section aria-label="work experience">
@@ -25,6 +27,7 @@ function App() {
             title="Work Experience"
             description="Where I've worked"
             footer="See my history"
+            className="SectionContainer"
           />
         </section>
         <section aria-label="contact">
@@ -32,6 +35,7 @@ function App() {
             title="Contact"
             description="Get in touch!"
             footer="Let's connect"
+            className="SectionContainer SectionFour"
           />
         </section>
       </div>

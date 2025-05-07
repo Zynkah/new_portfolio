@@ -1,6 +1,6 @@
-const DefaultSection = ({ title, description, footer }) => {
+const DefaultSection = ({ title, description, footer, className }) => {
   return (
-    <div className="SectionContainer">
+    <div className={className}>
       <h2>{title}</h2>
       <p>{description}</p>
       <p>{footer}</p>
